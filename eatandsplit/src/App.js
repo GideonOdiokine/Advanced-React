@@ -47,6 +47,7 @@ const App = () => {
           : friend
       )
     );
+    setSelectedUser(null)
   };
 
   return (
@@ -175,8 +176,6 @@ function FormSplitBill({ selectedUser, handleSplitBill }) {
     if (!bill || !paidByUser) return;
 
     handleSplitBill(whoIsPaying === "user" ? paidByFriend : -paidByUser);
-    setBill('')
-    setPaidByUser("")
   };
 
   return (
