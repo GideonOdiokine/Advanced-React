@@ -35,7 +35,6 @@ const App = () => {
     setSelectedUser(user);
     setOpenAddFriend(false);
   };
-  //   console.log(selectedUser);
 
   const handleSplitBill = (value) => {
     setFriends((friends) =>
@@ -79,7 +78,6 @@ const App = () => {
 export default App;
 
 function FriendsList({ friends, handleSelectedUser, selectedUser }) {
-  //   const friends = initialFriends;
 
   return (
     <ul>
