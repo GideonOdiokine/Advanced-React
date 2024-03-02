@@ -3,6 +3,12 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Search from './components/Search';
 import NumResult from './components/NumResult';
+import ListBox from './components/ListBox';
+import WatchedBox from './components/WatchedBox';
+import MovieList from './components/MovieList';
+import Box from './components/Box';
+import WatchedSummary from './components/WatchedSummary';
+import WatchedList from './components/WatchedList';
 
 const tempMovieData = [
   {
@@ -61,7 +67,15 @@ export default function App() {
         <Search />
         <NumResult movies={movies} />
       </Navbar>
-      <Main tempMovieData={movies} watched={watched} />
+      <Main>
+        <Box>
+          <MovieList movies={movies} />
+        </Box>
+        <Box>
+          <WatchedSummary watched={watched} />
+          <WatchedList watched={watched} />
+        </Box>
+      </Main>
     </>
   );
 }
