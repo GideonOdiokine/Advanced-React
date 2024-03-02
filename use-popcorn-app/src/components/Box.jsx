@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 const Box = ({ children }) => {
-  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className="box">
       <button
         className="btn-toggle"
-        onClick={() => setIsOpen2((open) => !open)}
+        onClick={() => setIsOpen((open) => !open)}
       >
-        {isOpen2 ? "–" : "+"}
+        {isOpen ? "–" : "+"}
       </button>
-      {isOpen2 && children}
+      {isOpen && children}
     </div>
   );
 };
