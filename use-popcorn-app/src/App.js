@@ -3,8 +3,6 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Search from './components/Search';
 import NumResult from './components/NumResult';
-import ListBox from './components/ListBox';
-import WatchedBox from './components/WatchedBox';
 import MovieList from './components/MovieList';
 import Box from './components/Box';
 import WatchedSummary from './components/WatchedSummary';

@@ -12,7 +12,12 @@ const starContainerStyle = {
 
 StarRating.propTypes = {
   maxRating: PropTypes.number.isRequired,
-  size:PropTypes.number
+  size: PropTypes.number,
+  defaultRating: PropTypes.number,
+  color: PropTypes.string,
+  messages: PropTypes.array,
+  className: PropTypes.string,
+  onSetRating:PropTypes.func
 };
 
 export default function StarRating({
